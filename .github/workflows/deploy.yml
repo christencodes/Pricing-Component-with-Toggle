@@ -16,7 +16,8 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm install
+          npm ci # Using 'ci' is faster and cleaner for automated builds
+          chmod +x ./node_modules/.bin/vite # This grants the missing permission
           npm run build
 
       - name: Deploy
