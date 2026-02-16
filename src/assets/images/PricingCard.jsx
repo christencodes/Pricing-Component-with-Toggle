@@ -10,7 +10,7 @@ export default function PricingCard({
   return (
     <>
       <div
-        className={`${plan !== "Professional" ? "pricing-card bg-white font-display text-(--gray700) flex flex-col items-center px-9 py-6 gap-3 rounded-xl md:w-150 min-w-[300px]" : "pricing-card bg-linear-(--purple-gradient) font-display text-white flex flex-col items-center px-9 py-6 gap-3 rounded-xl md:w-150 min-w-[300px] lg:py-12 "} ${plan === "Basic" ? "rounded-r-none" : null} ${plan === "Master" ? "rounded-r-none" : null} `}
+        className={`${plan !== "Professional" ? "pricing-card bg-white font-display text-(--gray700) flex flex-col items-center px-9 py-6 gap-3 rounded-xl md:w-150 min-w-[300px]" : "pricing-card bg-linear-(--purple-gradient) font-display text-white flex flex-col items-center px-9 py-6 gap-3 rounded-xl md:w-150 min-w-[300px] lg:py-12 "} ${plan === "Basic" ? "lg:rounded-r-none" : null} ${plan === "Master" ? "lg:rounded-l-none" : null}`}
       >
         <h3 className="font-bold text-lg">{plan}</h3>
         <h2 className="text-[72px] font-bold  ">
